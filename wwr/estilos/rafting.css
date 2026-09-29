@@ -36,12 +36,40 @@ h2 {
     text-align: center;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+h2 {
+    color: var(--cor-primaria);
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: var(--cor-destaque1);
+    padding: 1rem;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor-destaque1);
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .redes-sociais a {
@@ -76,6 +104,7 @@ article {
     right: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 16px;
+    border-left: 5px solid var(--cor-destaque2);
 }
 
 .hero article img {
@@ -86,28 +115,60 @@ article {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-nav {
-    background-color: var(--cor-destaque1);
-    padding: 10px;
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin: 16px;
 }
 
-nav a {
-    color: #fff;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
+.historia-grid img {
+    width: 100%;
+    height: auto;
 }
 
-footer {
-    margin-top: 16px;
-    border-top: 1px solid #000;
+.historia-grid p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.aventura-galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 16px;
+    padding: 8px;
+}
+
+.aventura-galeria figure {
+    margin: 0;
     text-align: center;
 }
 
-h2 {
-    color: var(--cor-secundaria);
+.aventura-galeria img {
+    width: 100%;
+    height: auto;
 }
 
-.hero article {
-    border-left: 5px solid var(--cor-destaque2);
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    border-top: 1px solid #000;
+    padding: 1rem;
+}
+
+footer .redes-sociais {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 0;
+}
+
+footer .redes-sociais img {
+    width: 32px;
+    height: auto;
 }
