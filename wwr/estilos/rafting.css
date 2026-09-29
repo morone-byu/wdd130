@@ -147,6 +147,14 @@ nav a {
     height: auto;
 }
 
+.aventura-galeria figcaption {
+    background-color: var(--cor-destaque2);
+    padding: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--cor-destaque1);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
