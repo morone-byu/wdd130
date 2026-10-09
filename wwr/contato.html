@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Rafting Aventura</title>
+    <meta name="description" content="Entre em contato com a Rafting Aventura. Tire dúvidas, faça reservas e envie sugestões.">
+    <meta name="author" content="Morone Ferreira">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Rafting Aventura">
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Fale Conosco</h1>
+        <section class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Informações de contato</h2>
+                <p><strong>Endereço:</strong> Av. das Corredeiras, 1230 - Foz do Iguaçu, PR</p>
+                <p><strong>Telefone:</strong> (45) 99999-8888</p>
+                <p><strong>Email:</strong> contato@raftingaventura.com.br</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115219.22799940554!2d-54.6291012600873!3d-25.518354392814956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690ebae530a43%3A0x21979473b4c4a952!2sFoz%20do%20Igua%C3%A7u%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1791573219193!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>Conheça Nossa Equipe</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="imagens/funcionario1.jpg" alt="Carlos - Guia Chefe de Rafting">
+                    <figcaption>Carlos Silva - Guia Chefe</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/funcionario2.jpg" alt="Ana - Atendimento">
+                    <figcaption>Ana Pereira - Atendimento ao Cliente</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/funcionario3.jpg" alt="João - Segurança">
+                    <figcaption>João Santos - Instrutor de Segurança</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Envie uma mensagem</h2>
+            <form>
+                <div class="form-item">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">useremail:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+
+                <fieldset>
+                    <legend>Qual o motivo do seu contato?</legend>
+                    <label><input type="radio" id="geral" name="proposito" value="Consulta Geral" required> Consulta Geral</label>
+                    <label><input type="radio" id="reserva" name="proposito" value="Pergunta sobre Reserva"> Pergunta sobre Reserva</label>
+                    <label><input type="radio" id="sugestao" name="proposito" value="Sugestão de Site"> Sugestão de Site</label>
+
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
+
+                <div class="form-item checkbox-item">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Quero receber a newsletter mensal</label>
+                </div>
+
+                <button type="submit">Enviar Minha Mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Rafting Aventura | Morone Ferreira</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="imagens/facebook.png" alt="Facebook Rafting Aventura"></a>
+            <a href="#"><img src="imagens/twitter.png" alt="Twitter Rafting Aventura"></a>
+            <a href="#"><img src="imagens/instagram.png" alt="Instagram Rafting Aventura"></a>
+        </nav>
+        <a href="https://app.moqups.com/..." target="_blank">Wireframe da página Contato</a>
+    </footer>
+</body>
+</html>
