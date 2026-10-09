@@ -190,8 +190,8 @@ footer {
 }
 
 .employee-grid figure img {
-    width: 180px !important;
-    height: 180px !important;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     object-position: top;
     border-radius: 8px;
@@ -274,4 +274,45 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--cor-destaque1);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-destaque1);
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p a {
+    color: #f9d976;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes-sociais img {
+    width: 32px;
+    height: 32px;
+}
+
+/* EQUIPE - imagens iguais */
+.employee-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    text-align: center;
+}
+
+.employee-grid figure img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
